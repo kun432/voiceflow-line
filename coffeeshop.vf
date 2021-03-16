@@ -1,0 +1,703 @@
+{
+  "project": {
+    "_id": "603e4d4ff95d90001cc3b8f6",
+    "name": "カスタムコーヒーショップ",
+    "teamID": "4DjZPGaEmb",
+    "devVersion": "603e4d4faff37d0006835103",
+    "platform": "general",
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "members": [],
+    "linkType": "CURVED",
+    "image": "",
+    "creatorID": 405,
+    "prototype": {
+      "nlp": {
+        "type": "LUIS",
+        "appID": "93056319-6876-41b5-a0b7-3f2577339431"
+      },
+      "data": {},
+      "trainedModel": {
+        "intents": [
+          {
+            "key": "a1k34k7",
+            "name": "order_intent",
+            "slots": [
+              {
+                "id": "uco34ey",
+                "dialog": {
+                  "prompt": [
+                    {
+                      "text": "",
+                      "slots": []
+                    }
+                  ],
+                  "confirm": [
+                    {
+                      "text": "",
+                      "slots": []
+                    }
+                  ],
+                  "utterances": [],
+                  "confirmEnabled": false
+                },
+                "required": false
+              }
+            ],
+            "inputs": [
+              {
+                "text": "{{[drink_name].uco34ey}} お願い",
+                "slots": [
+                  "uco34ey"
+                ]
+              },
+              {
+                "text": "{{[drink_name].uco34ey}} 下さい",
+                "slots": [
+                  "uco34ey"
+                ]
+              },
+              {
+                "text": "{{[drink_name].uco34ey}} をお願い",
+                "slots": [
+                  "uco34ey"
+                ]
+              },
+              {
+                "text": "{{[drink_name].uco34ey}} を下さい",
+                "slots": [
+                  "uco34ey"
+                ]
+              },
+              {
+                "text": "{{[drink_name].uco34ey}} かな",
+                "slots": [
+                  "uco34ey"
+                ]
+              },
+              {
+                "text": "{{[drink_name].uco34ey}}",
+                "slots": [
+                  "uco34ey"
+                ]
+              }
+            ]
+          }
+        ],
+        "slots": [
+          {
+            "key": "uco34ey",
+            "name": "drink_name",
+            "type": {
+              "value": "Custom"
+            },
+            "color": "#A086C4",
+            "inputs": [
+              "コーヒー,ホット,ホットコーヒー,アメリカン,アイスコーヒー,ブレンド",
+              "ジュース,オレンジジュース,オレンジ",
+              "紅茶,アイスティー,ストレートティー,レモンティー,ミルクティー"
+            ]
+          }
+        ]
+      },
+      "lastTrainedTime": 1615641007506
+    }
+  },
+  "version": {
+    "_id": "603e4d4faff37d0006835103",
+    "name": "Initial Version",
+    "projectID": "603e4d4ff95d90001cc3b8f6",
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale"
+    ],
+    "platformData": {
+      "slots": [
+        {
+          "key": "uco34ey",
+          "name": "drink_name",
+          "type": {
+            "value": "Custom"
+          },
+          "color": "#A086C4",
+          "inputs": [
+            "コーヒー,ホット, ホットコーヒー, アメリカン, アイスコーヒー, ブレンド",
+            "ジュース,オレンジジュース, オレンジ",
+            "紅茶,アイスティー, ストレートティー, レモンティー, ミルクティー"
+          ]
+        }
+      ],
+      "intents": [
+        {
+          "key": "a1k34k7",
+          "name": "order_intent",
+          "slots": [
+            {
+              "id": "uco34ey",
+              "dialog": {
+                "prompt": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "confirm": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "utterances": [],
+                "confirmEnabled": false
+              },
+              "required": false
+            }
+          ],
+          "inputs": [
+            {
+              "text": "{{[drink_name].uco34ey}} お願い",
+              "slots": [
+                "uco34ey"
+              ]
+            },
+            {
+              "text": "{{[drink_name].uco34ey}} 下さい",
+              "slots": [
+                "uco34ey"
+              ]
+            },
+            {
+              "text": "{{[drink_name].uco34ey}} をお願い",
+              "slots": [
+                "uco34ey"
+              ]
+            },
+            {
+              "text": "{{[drink_name].uco34ey}} を下さい",
+              "slots": [
+                "uco34ey"
+              ]
+            },
+            {
+              "text": "{{[drink_name].uco34ey}} かな",
+              "slots": [
+                "uco34ey"
+              ]
+            },
+            {
+              "text": "{{[drink_name].uco34ey}} ",
+              "slots": [
+                "uco34ey"
+              ]
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "ja-JP"
+        ]
+      },
+      "publishing": {},
+      "platform": "general"
+    },
+    "rootDiagramID": "603e4d4faff37d0006835104",
+    "creatorID": 405,
+    "prototype": {
+      "data": {
+        "name": "カスタムコーヒーショップ",
+        "locales": [
+          "ja-JP"
+        ]
+      },
+      "model": {
+        "intents": [
+          {
+            "key": "a1k34k7",
+            "name": "order_intent",
+            "slots": [
+              {
+                "id": "uco34ey",
+                "dialog": {
+                  "prompt": [
+                    {
+                      "text": "",
+                      "slots": []
+                    }
+                  ],
+                  "confirm": [
+                    {
+                      "text": "",
+                      "slots": []
+                    }
+                  ],
+                  "utterances": [],
+                  "confirmEnabled": false
+                },
+                "required": false
+              }
+            ],
+            "inputs": [
+              {
+                "text": "{{[drink_name].uco34ey}} お願い",
+                "slots": [
+                  "uco34ey"
+                ]
+              },
+              {
+                "text": "{{[drink_name].uco34ey}} 下さい",
+                "slots": [
+                  "uco34ey"
+                ]
+              },
+              {
+                "text": "{{[drink_name].uco34ey}} をお願い",
+                "slots": [
+                  "uco34ey"
+                ]
+              },
+              {
+                "text": "{{[drink_name].uco34ey}} を下さい",
+                "slots": [
+                  "uco34ey"
+                ]
+              },
+              {
+                "text": "{{[drink_name].uco34ey}} かな",
+                "slots": [
+                  "uco34ey"
+                ]
+              },
+              {
+                "text": "{{[drink_name].uco34ey}}",
+                "slots": [
+                  "uco34ey"
+                ]
+              }
+            ]
+          }
+        ],
+        "slots": [
+          {
+            "key": "uco34ey",
+            "name": "drink_name",
+            "type": {
+              "value": "Custom"
+            },
+            "color": "#A086C4",
+            "inputs": [
+              "コーヒー,ホット,ホットコーヒー,アメリカン,アイスコーヒー,ブレンド",
+              "ジュース,オレンジジュース,オレンジ",
+              "紅茶,アイスティー,ストレートティー,レモンティー,ミルクティー"
+            ]
+          }
+        ]
+      },
+      "context": {
+        "stack": [
+          {
+            "storage": {},
+            "variables": {},
+            "programID": "603e4d4faff37d0006835104"
+          }
+        ]
+      },
+      "settings": {
+        "layout": "voice-and-visuals"
+      }
+    }
+  },
+  "diagrams": {
+    "603e4d4faff37d0006835104": {
+      "_id": "603e4d4faff37d0006835104",
+      "offsetX": 181.19999999999993,
+      "offsetY": 174.19860839843756,
+      "zoom": 80,
+      "nodes": {
+        "start00000000000000000000": {
+          "nodeID": "start00000000000000000000",
+          "type": "start",
+          "coords": [
+            408.75,
+            86.25
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "604399c114ce235bc900f828",
+                "id": "603e4d4fbbb5700c58694916"
+              }
+            ],
+            "steps": []
+          }
+        },
+        "604399c114ce235bc900f828": {
+          "nodeID": "604399c114ce235bc900f828",
+          "type": "block",
+          "coords": [
+            817.5,
+            83.50000953674311
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60439a9214ce235bc900f839",
+              "604b9982bbafd948885abec5"
+            ]
+          }
+        },
+        "60439a9214ce235bc900f839": {
+          "nodeID": "60439a9214ce235bc900f839",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "default",
+                "content": "カスタムコーヒーショップにようこそ。ご注文は何にしますか？"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "604b9982bbafd948885abec5",
+                "id": "60439a9214ce235bc900f83c"
+              }
+            ]
+          }
+        },
+        "604b9982bbafd948885abec5": {
+          "nodeID": "604b9982bbafd948885abec5",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "default",
+                  "content": "ごめんなさい、よくわかりませんでした。コーヒー、ジュース, 紅茶のどれかをご注文してください。"
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "a1k34k7",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": [
+              {
+                "label": "紅茶"
+              },
+              {
+                "label": "ジュース"
+              },
+              {
+                "label": "コーヒー"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "604b9982bbafd948885abec8"
+              },
+              {
+                "type": "",
+                "target": "604b9a22bbafd948885abed1",
+                "id": "604b9982bbafd948885abec9"
+              }
+            ]
+          }
+        },
+        "604b9a22bbafd948885abecd": {
+          "nodeID": "604b9a22bbafd948885abecd",
+          "type": "if",
+          "data": {
+            "expressions": [
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "drink_name",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "コーヒー",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              },
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "drink_name",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "ジュース",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              },
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "drink_name",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "紅茶",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "604b9a47bbafd948885abee1",
+                "id": "604b9a22bbafd948885abecf"
+              },
+              {
+                "type": "",
+                "target": "604b9a71bbafd948885abeee",
+                "id": "604b9a22bbafd948885abed0"
+              },
+              {
+                "type": 2,
+                "target": "604b9a7ebbafd948885abef6",
+                "id": "604b9a33bbafd948885abeda"
+              },
+              {
+                "type": 3,
+                "target": "604b9a81bbafd948885abf00",
+                "id": "604b9a39bbafd948885abedc"
+              }
+            ]
+          }
+        },
+        "604b9a22bbafd948885abed1": {
+          "nodeID": "604b9a22bbafd948885abed1",
+          "type": "block",
+          "coords": [
+            1225,
+            77.00173950195307
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "604b9a22bbafd948885abecd"
+            ]
+          }
+        },
+        "604b9a47bbafd948885abede": {
+          "nodeID": "604b9a47bbafd948885abede",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "default",
+                "content": "ごめんなさい、{{[drink_name].drink_name}} は取り扱っていません。コーヒー、ジュース、紅茶から選んでください。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "604b9982bbafd948885abec5",
+                "id": "604b9a47bbafd948885abee0"
+              }
+            ]
+          }
+        },
+        "604b9a47bbafd948885abee1": {
+          "nodeID": "604b9a47bbafd948885abee1",
+          "type": "block",
+          "coords": [
+            861.25,
+            440.7517395019531
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "604b9a47bbafd948885abede"
+            ]
+          }
+        },
+        "604b9a71bbafd948885abeeb": {
+          "nodeID": "604b9a71bbafd948885abeeb",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "default",
+                "content": "コーヒーですね。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "604b9a92bbafd948885abf0f",
+                "id": "604b9a71bbafd948885abeed"
+              }
+            ]
+          }
+        },
+        "604b9a71bbafd948885abeee": {
+          "nodeID": "604b9a71bbafd948885abeee",
+          "type": "block",
+          "coords": [
+            1675.75,
+            84.25173950195307
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "604b9a71bbafd948885abeeb"
+            ]
+          }
+        },
+        "604b9a7ebbafd948885abef8": {
+          "nodeID": "604b9a7ebbafd948885abef8",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "default",
+                "content": "ジュースですね。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "604b9a92bbafd948885abf0f",
+                "id": "604b9a7ebbafd948885abef9"
+              }
+            ]
+          }
+        },
+        "604b9a7ebbafd948885abef6": {
+          "nodeID": "604b9a7ebbafd948885abef6",
+          "type": "block",
+          "coords": [
+            1675.75,
+            236.25173950195307
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "604b9a7ebbafd948885abef8"
+            ]
+          }
+        },
+        "604b9a81bbafd948885abf02": {
+          "nodeID": "604b9a81bbafd948885abf02",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "default",
+                "content": "紅茶ですね。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "604b9a92bbafd948885abf0f",
+                "id": "604b9a81bbafd948885abf03"
+              }
+            ]
+          }
+        },
+        "604b9a81bbafd948885abf00": {
+          "nodeID": "604b9a81bbafd948885abf00",
+          "type": "block",
+          "coords": [
+            1671,
+            394.2517395019531
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "604b9a81bbafd948885abf02"
+            ]
+          }
+        },
+        "604b9a92bbafd948885abf0c": {
+          "nodeID": "604b9a92bbafd948885abf0c",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "default",
+                "content": "ご注文ありがとうございました。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "604b9a92bbafd948885abf0e"
+              }
+            ]
+          }
+        },
+        "604b9a92bbafd948885abf0f": {
+          "nodeID": "604b9a92bbafd948885abf0f",
+          "type": "block",
+          "coords": [
+            2149.25,
+            241.00173950195307
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "604b9a92bbafd948885abf0c"
+            ]
+          }
+        }
+      },
+      "variables": [],
+      "children": [],
+      "name": "ROOT",
+      "versionID": "603e4d4faff37d0006835103",
+      "creatorID": 405,
+      "modified": 1615902030
+    }
+  }
+}
