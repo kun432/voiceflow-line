@@ -4,7 +4,7 @@ Voiceflow SDKを使った、LINE BOTのサンプルです。
 
 ![](public/voiceflow.jpg)
 
-![](public/line.jpg)
+<img src="https://github.com/kun432/voiceflow-line/raw/main/public/line.jpg" width=400 />
 
 ## Usage
 
