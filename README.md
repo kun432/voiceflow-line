@@ -2,6 +2,10 @@
 
 Voiceflow SDKを使った、LINE BOTのサンプルです。
 
+![](public/voicwflow.jpg)
+
+![](public/line.jpg)
+
 ## Usage
 
 ```
