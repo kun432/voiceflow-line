@@ -2,7 +2,7 @@
 
 Voiceflow SDKを使った、LINE BOTのサンプルです。
 
-![](public/voicwflow.jpg)
+![](public/voiceflow.jpg)
 
 ![](public/line.jpg)
 
