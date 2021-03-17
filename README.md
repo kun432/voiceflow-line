@@ -38,3 +38,7 @@ ngrok http 1234
 
 ngrokで生成されたURL + "/callback" をLINE Messaging APIのWebhookに指定すればOK
 
+### Disclaimer
+
+- LINE Messaging API/Voiceflow SDKのサンプルコードくっつけただけなのでゴミあります。
+- 今の所Speak Blockからの応答のみの対応です。AudioやDisplayの応答には対応してません（そのうちやる）
