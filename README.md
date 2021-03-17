@@ -2,6 +2,8 @@
 
 Voiceflow SDKを使った、LINE BOTのサンプルです。
 
+demo for node.js/express server for running a LINE chatbot with Voiceflow SDK.
+
 ![](public/voiceflow.png)
 
 <img src="https://github.com/kun432/voiceflow-line/raw/main/public/line.png" width=400 />
