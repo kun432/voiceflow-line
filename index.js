@@ -2,10 +2,7 @@
 
 const line = require('@line/bot-sdk');
 const { default: RuntimeClientFactory, TraceType } = require("@voiceflow/runtime-client-js");
-const bodyParser = require("body-parser");
 const express = require('express');
-
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 // create config from env variables
 const config = {
@@ -57,12 +54,13 @@ async function handleEvent(event) {
 
   const userId = event.source.userId;
   const userInput = event.message.text;
+
   const state = await db.read(userId);
 
   const vfclient = runtimeClientFactory.createClient(state); 
   const context = await vfclient.sendText(userInput)
 
-  console.log("REQ: " + JSON.stringify(event));
+  console.log("===== REQ ===== \n" + JSON.stringify(event, null, 2));
 
   if (context.isEnding()) {
       db.delete(userId);
@@ -71,15 +69,41 @@ async function handleEvent(event) {
   }
 
   // use reply API
-  const answer = { type: 'text', text: 
-    context.getTrace()
-    .filter(({ type }) => type === TraceType.SPEAK)
-    .map(({ payload })=> payload.message)
-    .join("") };
+  console.log("===== CONTEXT from VF ===== \n" + JSON.stringify(context.getTrace(), null, 2));
 
-  console.log("RES: " + JSON.stringify(answer));
+  let replyMessages = [];
+  for (const trace of context.getTrace()){
+    if (trace.type === TraceType.SPEAK) {
+      replyMessages.push({
+        type: 'text',
+        text: trace.payload.message
+      });
+    }
+    if (trace.type === TraceType.VISUAL && trace.payload.visualType === 'image') {
+      replyMessages.push({
+        type: 'image',
+        originalContentUrl: trace.payload.image,
+        previewImageUrl: trace.payload.image
+      });
+    }
+    if (trace.type === TraceType.AUDIO) {
+      replyMessages.push({
+        type: 'audio',
+        originalContentUrl: trace.payload.src,
+        duration: 12000 // need to know the duration of audio in advanced...
+      });
+    }
+  }
 
-  return client.replyMessage(event.replyToken, answer);
+  //const answer = { type: 'text', text: 
+  //  context.getTrace()
+  //  .filter(({ type }) => type === TraceType.SPEAK)
+  //  .map(({ payload })=> payload.message)
+  //  .join("") };
+
+  console.log("===== RES ===== \n" + JSON.stringify(replyMessages, null, 2));
+
+  return client.replyMessage(event.replyToken, replyMessages);
 }
 
 // listen on port

@@ -83,6 +83,72 @@
                 ]
               }
             ]
+          },
+          {
+            "key": "oi1x349k",
+            "name": "stop_intent",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "おわり",
+                "slots": []
+              },
+              {
+                "text": "終わり",
+                "slots": []
+              },
+              {
+                "text": "おしまい",
+                "slots": []
+              },
+              {
+                "text": "止める",
+                "slots": []
+              },
+              {
+                "text": "やめる",
+                "slots": []
+              },
+              {
+                "text": "止めて",
+                "slots": []
+              },
+              {
+                "text": "やめて",
+                "slots": []
+              },
+              {
+                "text": "終了",
+                "slots": []
+              },
+              {
+                "text": "ストップ",
+                "slots": []
+              }
+            ]
+          },
+          {
+            "key": "uuar34ny",
+            "name": "start_intent",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "開始",
+                "slots": []
+              },
+              {
+                "text": "スタート",
+                "slots": []
+              },
+              {
+                "text": "始める",
+                "slots": []
+              },
+              {
+                "text": "注文する",
+                "slots": []
+              }
+            ]
           }
         ],
         "slots": [
@@ -101,7 +167,7 @@
           }
         ]
       },
-      "lastTrainedTime": 1615641007506
+      "lastTrainedTime": 1615983873452
     }
   },
   "version": {
@@ -195,6 +261,72 @@
               ]
             }
           ]
+        },
+        {
+          "key": "oi1x349k",
+          "name": "stop_intent",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "おわり",
+              "slots": []
+            },
+            {
+              "text": "終わり",
+              "slots": []
+            },
+            {
+              "text": "おしまい",
+              "slots": []
+            },
+            {
+              "text": "止める",
+              "slots": []
+            },
+            {
+              "text": "やめる",
+              "slots": []
+            },
+            {
+              "text": "止めて",
+              "slots": []
+            },
+            {
+              "text": "やめて",
+              "slots": []
+            },
+            {
+              "text": "終了",
+              "slots": []
+            },
+            {
+              "text": "ストップ",
+              "slots": []
+            }
+          ]
+        },
+        {
+          "key": "uuar34ny",
+          "name": "start_intent",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "開始",
+              "slots": []
+            },
+            {
+              "text": "スタート",
+              "slots": []
+            },
+            {
+              "text": "始める",
+              "slots": []
+            },
+            {
+              "text": "注文する",
+              "slots": []
+            }
+          ]
         }
       ],
       "settings": {
@@ -281,6 +413,72 @@
                 ]
               }
             ]
+          },
+          {
+            "key": "oi1x349k",
+            "name": "stop_intent",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "おわり",
+                "slots": []
+              },
+              {
+                "text": "終わり",
+                "slots": []
+              },
+              {
+                "text": "おしまい",
+                "slots": []
+              },
+              {
+                "text": "止める",
+                "slots": []
+              },
+              {
+                "text": "やめる",
+                "slots": []
+              },
+              {
+                "text": "止めて",
+                "slots": []
+              },
+              {
+                "text": "やめて",
+                "slots": []
+              },
+              {
+                "text": "終了",
+                "slots": []
+              },
+              {
+                "text": "ストップ",
+                "slots": []
+              }
+            ]
+          },
+          {
+            "key": "uuar34ny",
+            "name": "start_intent",
+            "slots": [],
+            "inputs": [
+              {
+                "text": "開始",
+                "slots": []
+              },
+              {
+                "text": "スタート",
+                "slots": []
+              },
+              {
+                "text": "始める",
+                "slots": []
+              },
+              {
+                "text": "注文する",
+                "slots": []
+              }
+            ]
           }
         ],
         "slots": [
@@ -316,8 +514,8 @@
   "diagrams": {
     "603e4d4faff37d0006835104": {
       "_id": "603e4d4faff37d0006835104",
-      "offsetX": 181.19999999999993,
-      "offsetY": 174.19860839843756,
+      "offsetX": -223.4000000000001,
+      "offsetY": 321.07954101562495,
       "zoom": 80,
       "nodes": {
         "start00000000000000000000": {
@@ -337,21 +535,24 @@
                 "id": "603e4d4fbbb5700c58694916"
               }
             ],
-            "steps": []
+            "steps": [
+              "6051f1e76578cc1a9619c32e"
+            ]
           }
         },
         "604399c114ce235bc900f828": {
           "nodeID": "604399c114ce235bc900f828",
           "type": "block",
           "coords": [
-            817.5,
-            83.50000953674311
+            826.25,
+            63.50000953674311
           ],
           "data": {
             "name": "Block",
             "color": "standard",
             "steps": [
               "60439a9214ce235bc900f839",
+              "6051f1d16578cc1a9619c328",
               "604b9982bbafd948885abec5"
             ]
           }
@@ -364,13 +565,13 @@
             "dialogs": [
               {
                 "voice": "default",
-                "content": "カスタムコーヒーショップにようこそ。ご注文は何にしますか？"
+                "content": "カスタムコーヒーショップにようこそ。"
               }
             ],
             "ports": [
               {
                 "type": "",
-                "target": "604b9982bbafd948885abec5",
+                "target": "6051f1d16578cc1a9619c328",
                 "id": "60439a9214ce235bc900f83c"
               }
             ]
@@ -505,8 +706,8 @@
           "nodeID": "604b9a22bbafd948885abed1",
           "type": "block",
           "coords": [
-            1225,
-            77.00173950195307
+            1036.25,
+            369.50173950195307
           ],
           "data": {
             "name": "Block",
@@ -540,8 +741,8 @@
           "nodeID": "604b9a47bbafd948885abee1",
           "type": "block",
           "coords": [
-            861.25,
-            440.7517395019531
+            873.75,
+            753.2517395019531
           ],
           "data": {
             "name": "Block",
@@ -575,13 +776,14 @@
           "nodeID": "604b9a71bbafd948885abeee",
           "type": "block",
           "coords": [
-            1675.75,
-            84.25173950195307
+            1564.5,
+            -211.99826049804693
           ],
           "data": {
             "name": "Block",
             "color": "standard",
             "steps": [
+              "6051f6c26578cc1a9619c514",
               "604b9a71bbafd948885abeeb"
             ]
           }
@@ -593,8 +795,8 @@
             "randomize": false,
             "dialogs": [
               {
-                "voice": "default",
-                "content": "ジュースですね。"
+                "voice": "audio",
+                "content": "https://s3.amazonaws.com/com.getstoryflow.audio.production/1615990193251-bossa_nova_jingle_1.mp3"
               }
             ],
             "ports": [
@@ -610,14 +812,15 @@
           "nodeID": "604b9a7ebbafd948885abef6",
           "type": "block",
           "coords": [
-            1675.75,
-            236.25173950195307
+            1519.25,
+            216.25173950195318
           ],
           "data": {
             "name": "Block",
             "color": "standard",
             "steps": [
-              "604b9a7ebbafd948885abef8"
+              "604b9a7ebbafd948885abef8",
+              "60520ae1db5f87f91d5e35ec"
             ]
           }
         },
@@ -645,8 +848,8 @@
           "nodeID": "604b9a81bbafd948885abf00",
           "type": "block",
           "coords": [
-            1671,
-            394.2517395019531
+            1513.5,
+            486.7517395019531
           ],
           "data": {
             "name": "Block",
@@ -680,8 +883,8 @@
           "nodeID": "604b9a92bbafd948885abf0f",
           "type": "block",
           "coords": [
-            2149.25,
-            241.00173950195307
+            2004.25,
+            644.7517395019531
           ],
           "data": {
             "name": "Block",
@@ -690,14 +893,241 @@
               "604b9a92bbafd948885abf0c"
             ]
           }
+        },
+        "6051f1d16578cc1a9619c328": {
+          "nodeID": "6051f1d16578cc1a9619c328",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "default",
+                "content": "ご注文は何にしますか？"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "604b9982bbafd948885abec5",
+                "id": "6051f1d16578cc1a9619c32b"
+              }
+            ]
+          }
+        },
+        "6051f1e76578cc1a9619c32e": {
+          "nodeID": "6051f1e76578cc1a9619c32e",
+          "type": "command",
+          "data": {
+            "name": "stop",
+            "intent": "oi1x349k",
+            "diagramID": "6051f1ec8b8759001c287ea0",
+            "mappings": [],
+            "next": null,
+            "ports": []
+          }
+        },
+        "6051f4eb6578cc1a9619c50a": {
+          "nodeID": "6051f4eb6578cc1a9619c50a",
+          "type": "intent",
+          "data": {
+            "intent": "uuar34ny",
+            "mappings": [],
+            "ports": [
+              {
+                "type": "",
+                "target": "604399c114ce235bc900f828",
+                "id": "6051f4eb6578cc1a9619c50b"
+              }
+            ]
+          }
+        },
+        "6051f4eb6578cc1a9619c50c": {
+          "nodeID": "6051f4eb6578cc1a9619c50c",
+          "type": "block",
+          "coords": [
+            419.2500000000001,
+            -133.74826049804688
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6051f4eb6578cc1a9619c50a"
+            ]
+          }
+        },
+        "6051f6c26578cc1a9619c514": {
+          "nodeID": "6051f6c26578cc1a9619c514",
+          "type": "visual",
+          "data": {
+            "name": "Visuals",
+            "image": "https://s3.amazonaws.com/com.getstoryflow.api.images/1615984342771-jnj9cdt968v7e1ykcntqhojce6k5.jpg",
+            "device": null,
+            "dimensions": null,
+            "visualType": "image",
+            "canvasVisibility": "full",
+            "blockColor": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "604b9a71bbafd948885abeeb",
+                "id": "6051f6c26578cc1a9619c517"
+              }
+            ]
+          }
+        },
+        "60520ae1db5f87f91d5e35ec": {
+          "nodeID": "60520ae1db5f87f91d5e35ec",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "default",
+                "content": "ジュースですね。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "604b9a92bbafd948885abf0f",
+                "id": "60520ae1db5f87f91d5e35ee"
+              }
+            ]
+          }
         }
       },
       "variables": [],
-      "children": [],
+      "children": [
+        "6051f1ec8b8759001c287ea0"
+      ],
       "name": "ROOT",
       "versionID": "603e4d4faff37d0006835103",
       "creatorID": 405,
-      "modified": 1615902030
+      "modified": 1615997604
+    },
+    "6051f1ec8b8759001c287ea0": {
+      "_id": "6051f1ec8b8759001c287ea0",
+      "offsetX": -1,
+      "offsetY": 52.200000000000095,
+      "zoom": 80,
+      "variables": [],
+      "children": [],
+      "nodes": {
+        "6051f1eb6578cc1a9619c331": {
+          "nodeID": "6051f1eb6578cc1a9619c331",
+          "type": "start",
+          "coords": [
+            278.75,
+            71.25
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "6051f2046578cc1a9619c338",
+                "id": "6051f1fd6578cc1a9619c332"
+              }
+            ],
+            "steps": []
+          }
+        },
+        "6051f2046578cc1a9619c335": {
+          "nodeID": "6051f2046578cc1a9619c335",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "default",
+                "content": "またのご来店をお待ちしております。"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6051f3c06578cc1a9619c381",
+                "id": "6051f2046578cc1a9619c337"
+              }
+            ]
+          }
+        },
+        "6051f2046578cc1a9619c338": {
+          "nodeID": "6051f2046578cc1a9619c338",
+          "type": "block",
+          "coords": [
+            623.75,
+            263.2499999999999
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6051f2046578cc1a9619c335"
+            ]
+          }
+        },
+        "6051f3c06578cc1a9619c37f": {
+          "nodeID": "6051f3c06578cc1a9619c37f",
+          "type": "exit",
+          "data": {
+            "ports": []
+          }
+        },
+        "6051f3c06578cc1a9619c381": {
+          "nodeID": "6051f3c06578cc1a9619c381",
+          "type": "block",
+          "coords": [
+            806.25,
+            475.7499999999999
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6051f3c06578cc1a9619c37f"
+            ]
+          }
+        }
+      },
+      "versionID": "603e4d4faff37d0006835103",
+      "creatorID": 405,
+      "name": "stop",
+      "modified": 1615983797
+    },
+    "6051f4be97a29f001b137258": {
+      "_id": "6051f4be97a29f001b137258",
+      "offsetX": 0,
+      "offsetY": 0,
+      "zoom": 100,
+      "variables": [],
+      "children": [],
+      "nodes": {
+        "6051f4be6578cc1a9619c509": {
+          "nodeID": "6051f4be6578cc1a9619c509",
+          "type": "start",
+          "coords": [
+            360,
+            120
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": null
+              }
+            ]
+          }
+        }
+      },
+      "versionID": "603e4d4faff37d0006835103",
+      "creatorID": 405,
+      "name": "start",
+      "modified": 1615983806
     }
   }
 }
