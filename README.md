@@ -1,5 +1,23 @@
 # voiceflow-line
 
+# ** このレポジトリはアーカイブされています / This repository has been archived **
+
+**Dialog Management APIができたので、Voiceflow SDKはobsoletedとなったそうです。本レポジトリのコードは動かない可能性がありますのでアーカイブしました。（Dialog Management APIにあわせた新しいSDKがそのうちリリースされるらしいです。）**
+
+**Dialog Management APIを使ったLINE連携のデモはこちらをご覧ください。**
+
+https://github.com/kun432/voiceflow-dialog-management-api-sample-ja/tree/main/express-line
+
+-----
+
+**This repository has been archived because Voiceflow SDK has been replaced with Dialog Management API and obsoleted now. These codes may not work. (I heard that a New SDK suitable for Dialog Management API will be released in future.) **
+
+**New demo with Dialog Management API and LINE is here:**
+
+https://github.com/kun432/voiceflow-dialog-management-api-sample-ja/tree/main/express-line
+
+## About
+
 Voiceflow SDKを使った、LINE BOTのサンプルです。
 
 demo for node.js/express server for running a LINE chatbot with Voiceflow SDK.
